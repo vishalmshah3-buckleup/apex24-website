@@ -28,8 +28,9 @@ a {
 
 .logo {
   font-family: 'Bodoni Moda', serif;
-  font-size: 58px;
+  font-size: 44px;
   font-weight: 400;
+  line-height: 1.1;
 }
 
 .nav-links {
@@ -39,7 +40,7 @@ a {
 }
 
 .nav-links a {
-  font-size: 22px;
+  font-size: 17px;
 }
 
 .active-link {
@@ -50,7 +51,7 @@ a {
 .buckleup-btn {
   background: #f6cc00;
   color: #000;
-  padding: 22px 42px;
+  padding: 18px 34px;
   font-weight: 600;
 }
 
@@ -63,57 +64,61 @@ a {
 
 .hero h1 {
   font-family: 'Bodoni Moda', serif;
-  font-size: 96px;
-  line-height: 1.15;
+  font-size: 72px;
+  line-height: 1.1;
+  letter-spacing: -2px;
   font-weight: 400;
-  max-width: 1500px;
+  max-width: 1400px;
 }
 
 .content-section {
-  padding: 140px 70px;
+  padding: 120px 70px;
   max-width: 1400px;
   margin: auto;
 }
 
 .content-section h2 {
   font-family: 'Bodoni Moda', serif;
-  font-size: 72px;
+  font-size: 54px;
+  line-height: 1.1;
   font-weight: 400;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .content-section p {
-  font-size: 34px;
+  font-size: 26px;
   line-height: 1.8;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
   font-weight: 600;
 }
 
 .approach-section {
-  padding: 140px 70px;
+  padding: 120px 70px;
 }
 
 .approach-section h2 {
   font-family: 'Bodoni Moda', serif;
-  font-size: 72px;
-  margin-bottom: 90px;
+  font-size: 54px;
+  line-height: 1.1;
+  margin-bottom: 80px;
   font-weight: 400;
 }
 
 .approach-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px 120px;
+  gap: 70px 100px;
 }
 
 .approach-title {
   font-family: 'Bodoni Moda', serif;
-  font-size: 64px;
+  font-size: 48px;
+  line-height: 1.1;
   font-weight: 400;
 }
 
 .approach-description {
-  font-size: 30px;
+  font-size: 22px;
   line-height: 1.8;
   font-weight: 600;
 }
@@ -129,7 +134,8 @@ a {
 
 .contact-section h1 {
   font-family: 'Bodoni Moda', serif;
-  font-size: 82px;
+  font-size: 62px;
+  line-height: 1.1;
   margin-bottom: 50px;
   font-weight: 400;
 }
@@ -139,7 +145,7 @@ a {
 }
 
 .contact-info p {
-  font-size: 30px;
+  font-size: 24px;
   margin-bottom: 20px;
   font-weight: 600;
 }
@@ -147,7 +153,7 @@ a {
 .contact-form label {
   display: block;
   margin-bottom: 14px;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .contact-form input,
@@ -155,9 +161,9 @@ a {
   width: 100%;
   background: #e8e8e8;
   border: none;
-  padding: 20px;
-  margin-bottom: 40px;
-  font-size: 20px;
+  padding: 18px;
+  margin-bottom: 36px;
+  font-size: 18px;
 }
 
 .name-grid {
@@ -170,8 +176,8 @@ a {
   background: #f6cc00;
   color: #000;
   border: none;
-  padding: 20px 42px;
-  font-size: 20px;
+  padding: 18px 34px;
+  font-size: 18px;
   font-weight: 600;
   cursor: pointer;
 }
@@ -194,22 +200,22 @@ a {
   }
 
   .hero h1 {
-    font-size: 64px;
+    font-size: 48px;
   }
 
   .content-section h2,
   .approach-section h2,
   .contact-section h1 {
-    font-size: 52px;
+    font-size: 42px;
   }
 
   .content-section p,
   .approach-description {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .approach-title {
-    font-size: 42px;
+    font-size: 36px;
   }
 
   .approach-grid {
@@ -234,35 +240,39 @@ a {
   }
 
   .logo {
-    font-size: 42px;
+    font-size: 34px;
   }
 
   .hero h1 {
-    font-size: 46px;
+    font-size: 36px;
   }
 
   .content-section h2,
   .approach-section h2,
   .contact-section h1 {
-    font-size: 40px;
+    font-size: 34px;
   }
 
   .content-section p,
   .approach-description,
   .contact-info p {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .approach-title {
-    font-size: 36px;
+    font-size: 30px;
   }
 
   .nav-links {
-    gap: 20px;
+    gap: 18px;
   }
 
   .nav-links a {
-    font-size: 18px;
+    font-size: 16px;
+  }
+
+  .buckleup-btn {
+    padding: 14px 24px;
   }
 
 }
