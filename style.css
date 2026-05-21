@@ -1,67 +1,268 @@
-body {
+/* style.css */
+
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  color: #222;
-  background: #fff;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: auto;
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
 }
 
-header {
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-header .container {
+.navbar {
+  width: 100%;
+  padding: 40px 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #222;
+.logo {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 58px;
+  font-weight: 400;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.nav-links a {
+  font-size: 22px;
+}
+
+.active-link {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 4px;
+}
+
+.buckleup-btn {
+  background: #f6cc00;
+  color: #000;
+  padding: 22px 42px;
+  font-weight: 600;
 }
 
 .hero {
-  padding: 100px 0;
-  text-align: center;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 0 70px;
 }
 
-.hero h2 {
-  font-size: 42px;
-  margin-bottom: 20px;
+.hero h1 {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 96px;
+  line-height: 1.15;
+  font-weight: 400;
+  max-width: 1500px;
 }
 
-.hero p {
-  font-size: 18px;
-  line-height: 1.7;
-  max-width: 700px;
+.content-section {
+  padding: 140px 70px;
+  max-width: 1400px;
   margin: auto;
 }
 
-.button {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 14px 28px;
-  background: black;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
+.content-section h2 {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 72px;
+  font-weight: 400;
+  margin-bottom: 60px;
 }
 
-.about {
-  padding: 80px 0;
-  background: #f5f5f5;
+.content-section p {
+  font-size: 34px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  font-weight: 600;
 }
 
-footer {
-  padding: 30px 0;
-  text-align: center;
-  border-top: 1px solid #eee;
+.approach-section {
+  padding: 140px 70px;
+}
+
+.approach-section h2 {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 72px;
+  margin-bottom: 90px;
+  font-weight: 400;
+}
+
+.approach-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px 120px;
+}
+
+.approach-title {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 64px;
+  font-weight: 400;
+}
+
+.approach-description {
+  font-size: 30px;
+  line-height: 1.8;
+  font-weight: 600;
+}
+
+.contact-page {
+  padding: 40px 70px 120px;
+}
+
+.contact-section {
+  max-width: 900px;
+  margin: auto;
+}
+
+.contact-section h1 {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 82px;
+  margin-bottom: 50px;
+  font-weight: 400;
+}
+
+.contact-info {
+  margin-bottom: 60px;
+}
+
+.contact-info p {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 22px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  background: #e8e8e8;
+  border: none;
+  padding: 20px;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+.name-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.contact-form button {
+  background: #f6cc00;
+  color: #000;
+  border: none;
+  padding: 20px 42px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-form button:hover,
+.buckleup-btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+  }
+
+  .hero h1 {
+    font-size: 64px;
+  }
+
+  .content-section h2,
+  .approach-section h2,
+  .contact-section h1 {
+    font-size: 52px;
+  }
+
+  .content-section p,
+  .approach-description {
+    font-size: 24px;
+  }
+
+  .approach-title {
+    font-size: 42px;
+  }
+
+  .approach-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .name-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .navbar,
+  .hero,
+  .content-section,
+  .approach-section,
+  .contact-page {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .logo {
+    font-size: 42px;
+  }
+
+  .hero h1 {
+    font-size: 46px;
+  }
+
+  .content-section h2,
+  .approach-section h2,
+  .contact-section h1 {
+    font-size: 40px;
+  }
+
+  .content-section p,
+  .approach-description,
+  .contact-info p {
+    font-size: 20px;
+  }
+
+  .approach-title {
+    font-size: 36px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+  }
+
 }
