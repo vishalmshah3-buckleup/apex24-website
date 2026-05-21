@@ -1,41 +1,88 @@
+<!-- contact.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact - Apex24 Technologies</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact | Apex24 Techsys</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-  <div class="container">
-    <h1>Apex24 Technologies</h1>
+  <header class="navbar">
+    <a href="index.html" class="logo">Apex24 Techsys</a>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="contact.html">Contact</a>
+    <nav class="nav-links">
+      <a href="contact.html" class="active-link">Contact</a>
+
+      <a href="https://instagram.com/buckleup_now" target="_blank" class="icon-link">
+        Instagram
+      </a>
+
+      <a href="https://x.com/buckleup_now" target="_blank" class="icon-link">
+        X
+      </a>
+
+      <a href="https://buckleupnow.in/" target="_blank" class="buckleup-btn">
+        BuckleUp
+      </a>
     </nav>
-  </div>
-</header>
+  </header>
 
-<section class="hero">
-  <div class="container">
-    <h2>Contact Us</h2>
+  <main class="contact-page">
 
-    <p>Email: hello@apex24.tech</p>
+    <section class="contact-section">
 
-    <p>
-      Pune, Maharashtra, India
-    </p>
-  </div>
-</section>
+      <h1>Get in touch.</h1>
 
-<footer>
-  <div class="container">
-    <p>© 2026 Apex24 Technologies</p>
-  </div>
-</footer>
+      <div class="contact-info">
+        <p>contact@apex24.tech</p>
+        <p>+91 - 90110 49474</p>
+      </div>
+
+      <form class="contact-form">
+
+        <div class="name-grid">
+
+          <div>
+            <label>First Name</label>
+            <input type="text">
+          </div>
+
+          <div>
+            <label>Last Name</label>
+            <input type="text">
+          </div>
+
+        </div>
+
+        <div>
+          <label>Email</label>
+          <input type="email">
+        </div>
+
+        <div>
+          <label>Message</label>
+          <textarea rows="6"></textarea>
+        </div>
+
+        <button type="submit">
+          Send
+        </button>
+
+      </form>
+
+    </section>
+
+  </main>
 
 </body>
 </html>
