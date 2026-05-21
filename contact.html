@@ -49,40 +49,60 @@
       </div>
 
       <form 
-        class="contact-form"
-        action="https://formsubmit.co/contact@apex24.tech"
-        method="POST"
+  class="contact-form"
+  action="https://formsubmit.co/contact@apex24.tech"
+  method="POST"
+>
+
+  <input type="hidden" name="_captcha" value="false">
+
+  <input type="hidden" name="_next" value="https://apex24.tech/thankyou.html">
+
+  <label>Name</label>
+
+  <div class="name-grid">
+
+    <div>
+      <input 
+        type="text" 
+        name="first_name"
+        placeholder="First Name" 
+        required
       >
-        <div class="name-grid">
+    </div>
 
-          <div>
-            <label>First Name</label>
-            <input type="text">
-          </div>
+    <div>
+      <input 
+        type="text" 
+        name="last_name"
+        placeholder="Last Name" 
+        required
+      >
+    </div>
 
-          <div>
-            <label>Last Name</label>
-            <input type="text">
-          </div>
+  </div>
 
-        </div>
+  <label>Email</label>
 
-        <div>
-          <label>Email</label>
-          <input type="email">
-        </div>
+  <input 
+    type="email" 
+    name="email"
+    placeholder="Email Address"
+    required
+  >
 
-        <div>
-          <label>Message</label>
-          <textarea rows="6"></textarea>
-        </div>
+  <label>Message</label>
 
-        <button type="submit">
-          Send
-        </button>
+  <textarea 
+    name="message"
+    rows="8"
+    placeholder="Your message..."
+    required
+  ></textarea>
 
-      </form>
+  <button type="submit">Send</button>
 
+</form>
     </section>
 
   </main>
